@@ -7,17 +7,17 @@
 
 /* BODY */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f7f7;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
   color: #333;
 }
 
 /* NAVBAR */
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #6a0dad;
+  align-items: center;
+  background-color: #005f99;
   color: white;
   padding: 15px 30px;
 }
@@ -26,103 +26,121 @@ nav h2 {
   font-size: 22px;
 }
 
+nav div {
+  display: flex;
+  gap: 15px;
+}
+
 nav a {
-  color: white;
   text-decoration: none;
-  margin-left: 15px;
+  color: white;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #ffd60a;
 }
 
-/* CONTAINER PADRÃO */
+/* CONTAINER */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* TÍTULOS */
+/* TITULOS */
 h1 {
   margin-bottom: 20px;
-  color: #6a0dad;
+  color: #005f99;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 p {
-  margin-bottom: 15px;
   line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* GRID HOME */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* GRID SOBRE */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* IMAGENS */
+.image-box {
+  background-color: #d9d9d9;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.image-banner {
+  background-color: #d9d9d9;
+  height: 200px;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CAIXAS */
+.side-box {
+  background-color: #eef3f8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contact-box {
+  background-color: #eef3f8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 /* LISTAS */
 ul {
-  margin-top: 10px;
   padding-left: 20px;
 }
 
-/* BOTÃO EMERGÊNCIA */
-.emergency-btn {
-  display: inline-block;
-  background-color: #d62828;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: 0.3s;
+li {
+  margin-bottom: 5px;
 }
 
-.emergency-btn:hover {
-  background-color: #a4161a;
-}
-
-/* FORMULÁRIO */
-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  background-color: #6a0dad;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: #4b0082;
-}
-
-/* CARDS (pra usar depois) */
-.card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+/* TEXTO */
+.text {
   margin-top: 20px;
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
   nav {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .container {
-    margin: 20px;
   }
 }

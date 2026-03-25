@@ -5,14 +5,43 @@ export default function Home() {
     <>
       <Navbar />
 
-      <h1>Combate à Violência Doméstica</h1>
+      <div className="container">
+        <h1>Proteção à Infância</h1>
 
-      <p>
-        Este projeto tem como objetivo informar, orientar e incentivar denúncias
-        de casos de violência doméstica.
-      </p>
+        <div className="home-grid">
+          <div className="image-box">📷</div>
 
-      <a href="tel:190">🚨 Emergência</a>
+          <div>
+            <h2>Conselho Tutelar</h2>
+            <p>
+              O Conselho Tutelar é responsável por garantir os direitos das
+              crianças e adolescentes, atuando em casos de negligência,
+              abuso e violação de direitos.
+            </p>
+
+            <ul>
+              <li>Proteção infantil</li>
+              <li>Atendimento à comunidade</li>
+              <li>Encaminhamento de casos</li>
+            </ul>
+          </div>
+
+          <div className="side-box">
+            <h3>Funções</h3>
+            <ul>
+              <li>Receber denúncias</li>
+              <li>Acompanhar famílias</li>
+              <li>Aplicar medidas</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text">
+          O Conselho Tutelar atua diretamente na defesa dos direitos previstos
+          no Estatuto da Criança e do Adolescente (ECA), garantindo proteção
+          integral à infância.
+        </p>
+      </div>
     </>
   )
 }

@@ -5,9 +5,23 @@ export default function Contato() {
     <>
       <Navbar />
 
-      <h1>Contato</h1>
+      <div className="container">
+        <h1>Contatos</h1>
 
-      <p>Entre em contato para mais informações.</p>
+        <div className="image-banner">📷</div>
+
+        <div className="contact-box">
+          <h2>Contatos úteis</h2>
+          <p>190 - Polícia</p>
+          <p>Disque 100 - Direitos Humanos</p>
+        </div>
+
+        <div className="contact-box">
+          <h2>Conselho Tutelar</h2>
+          <p>Procure o Conselho Tutelar da sua cidade</p>
+          <p>Atendimento presencial</p>
+        </div>
+      </div>
     </>
   )
 }
